@@ -1,6 +1,4 @@
 # Student Manager App
-# Coursework project using Tkinter
-# Author: YOUR NAME HERE
 
 import tkinter as tk
 from tkinter import messagebox, simpledialog
