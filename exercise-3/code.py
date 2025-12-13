@@ -6,7 +6,7 @@ from tkinter import messagebox, simpledialog
 FILE_PATH = "Assessment 1 - Skills Portfolio\A1 - Resources\studentMarks.txt"
 TOTAL_MARKS = 160   # 3 coursework (20 each) + exam (100)
 
-# ---------- FILE HANDLING ----------
+# FILE HANDLING 
 
 # READ STUDENT DATA FROM FILE
 def read_file():
@@ -41,7 +41,7 @@ def write_file(students):
             file.write(f"{s['number']},{s['name']},{s['cw1']},{s['cw2']},{s['cw3']},{s['exam']}\n")
 
 
-# ---------- CALCULATIONS ----------
+#  CALCULATIONS 
 
 # CALCULATE TOTAL MARKS
 def get_total(s):
@@ -67,7 +67,7 @@ def get_grade(p):
         return "F"
 
 
-# ---------- GUI APPLICATION ----------
+# GUI APPLICATION 
 
 class StudentManager:
     def __init__(self, root):
@@ -97,7 +97,7 @@ class StudentManager:
         tk.Button(menu, text="Delete Student", width=20, command=self.delete_student).pack(pady=2)
         tk.Button(menu, text="Update Student", width=20, command=self.update_student).pack(pady=2)
 
-    # ---------- DISPLAY ----------
+    #  DISPLAY 
 
     # DISPLAY STUDENT DETAILS
     def show_students(self, students):
@@ -127,7 +127,7 @@ class StudentManager:
                 f"Average Percentage: {avg:.2f}%"
             )
 
-    # ---------- MENU FUNCTIONS ----------
+    # MENU FUNCTIONS 
 
     # VIEW ALL STUDENTS
     def view_all(self):
@@ -213,7 +213,7 @@ class StudentManager:
         messagebox.showinfo("Not Found", "Student not found")
 
 
-# ---------- RUN PROGRAM ----------
+#  RUN PROGRAM 
 root = tk.Tk()
 app = StudentManager(root)
 root.mainloop()
