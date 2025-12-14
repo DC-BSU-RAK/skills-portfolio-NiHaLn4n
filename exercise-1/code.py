@@ -161,7 +161,6 @@ def clearScreen():
     bg_label = tk.Label(root, image=blur_bg_img)
     bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 
-
 # MAIN WINDOW
 root = tk.Tk()
 root.title("Math Quiz")

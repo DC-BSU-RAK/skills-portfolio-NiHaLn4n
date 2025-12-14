@@ -4,10 +4,10 @@ import random
 import os
 
 # Path to background image
-IMAGE_PATH = "joke.jpg"
+IMAGE_PATH = "exercise-2\joke.jpg"
 
 # Path to jokes file
-JOKE_FILE  = "Jokes.txt"
+JOKE_FILE  = "exercise-2\Jokes.txt"
 
 # Window size
 WINDOW_SIZE = (800, 600)

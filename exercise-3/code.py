@@ -183,6 +183,7 @@ class StudentManager:
                 "cw1": cw1,
                 "cw2": cw2,
                 "cw3": cw3,
+                
                 "exam": exam
             })
             write_file(self.students)
